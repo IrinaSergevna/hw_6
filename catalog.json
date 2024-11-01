@@ -1,0 +1,57 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 37,
+    "fields": {
+        "name": "к1",
+        "description": "описание к1"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 38,
+    "fields": {
+        "name": "к2",
+        "description": "описание к2"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "name": "п1",
+        "description": "описание п1",
+        "image": "products/6fe239e490dd6943a4d31d3f42y5--materialy-dlya-tvorchestva-iskusstvennyj-meh-dlin_mge12Bu.jpg",
+        "category": 37,
+        "price": "1000.00",
+        "created_at": "2024-11-01T10:19:12Z",
+        "updated_at": "2024-11-01T10:19:16Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+        "name": "п2",
+        "description": "описание п2",
+        "image": "products/700-nw.jpg",
+        "category": 37,
+        "price": "5000.00",
+        "created_at": "2024-11-01T10:20:30Z",
+        "updated_at": "2024-11-01T10:20:31Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+        "name": "п3",
+        "description": "описание п3",
+        "image": "products/1622938675_2-phonoteka_org-p-temno-seraya-tkan-tekstura-krasivo-2.jpg",
+        "category": 37,
+        "price": "50000.00",
+        "created_at": "2024-11-01T10:21:04Z",
+        "updated_at": "2024-11-01T10:21:06Z"
+    }
+}
+]
