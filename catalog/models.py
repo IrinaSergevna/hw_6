@@ -46,9 +46,9 @@ class Product(models.Model):
 
 
 class Contact(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    message = models.TextField()
+    name = models.CharField(max_length=100, verbose_name="Имя")
+    email = models.EmailField(verbose_name="Электронная почта")
+    message = models.CharField(max_length=255, verbose_name="Сообщение")
 
     def __str__(self):
-        return self.name
+        return f"{self.name} - {self.email}"

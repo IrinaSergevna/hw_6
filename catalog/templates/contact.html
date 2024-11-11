@@ -17,5 +17,19 @@
     <textarea name="message"></textarea><br>
     <input type="submit" value="Отправить" />
 </form>
+
+<h2>Сообщения:</h2>
+    {% if contacts %}
+        {% for contact in contacts %}
+            <div>
+                <p><strong>Имя:</strong> {{ contact.name }}</p>
+                <p><strong>Email:</strong> {{ contact.email }}</p>
+                <p><strong>Сообщение:</strong> {{ contact.message }}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Нет сообщений для отображения.</p>
+    {% endif %}
 </body>
 </html>

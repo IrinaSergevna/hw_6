@@ -47,6 +47,9 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
+            "libraries": {  # Добавьте здесь путь к тегам
+                'my_tags': 'catalog.templatetags.my_tags',
+            },
         },
     },
 ]
